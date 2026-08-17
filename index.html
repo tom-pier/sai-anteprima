@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sportello Agevolazioni Italia — Verifica se rientri nei requisiti per ridurre o eliminare i debiti</title>
+<meta name="description" content="Hai debiti che non riesci più a pagare? Rispondi a poche domande e verifica se rientri nei requisiti previsti dalla legge. Servizio gratuito e senza impegno. Ti chiama un consulente specializzato nell'eliminazione del debito.">
+<meta property="og:title" content="Sportello Agevolazioni Italia — Dalla parte delle famiglie italiane.">
+<meta property="og:description" content="Verifica gratuita dei requisiti per ridurre o eliminare i debiti. Rispondi a poche domande: se rientri, ti chiama un consulente specializzato.">
+<!-- TODO: og:image 1200x630 (usare SAI_cover o creative dedicata) + favicon (SAI_monogramma) -->
+
+<!-- ═══════════ PIXEL (stessi ID di Debito Zen — confermato 17/08/2026) ═══════════ -->
+<!-- Meta Pixel Code rimosso nell'anteprima -->
+
+<!-- TikTok Pixel Code Start rimosso nell'anteprima -->
+
+<!-- SAI:EMBED-HEAD-START -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ════════════════════════════════════════════════════════
+   SPORTELLO AGEVOLAZIONI ITALIA — QUIZ FUNNEL · ELIMINAZIONE DEBITI · v2
+   Brand identity v1.3 · palette vincolante · flat: no gradienti, no ombre
+   Flusso: quiz → micro-risultato → recapiti (un campo per schermata) → conferma numero → grazie
+   REGOLA: zero backslash in tutto il file (destinazione WordPress/Elementor)
+   ════════════════════════════════════════════════════════ */
+:root{
+  --sai-blu:#0A2A45;      /* Blu Ministeriale — testo, titoli, CTA */
+  --sai-blu-hover:#123C63;
+  --sai-rosso:#AC3625;    /* Rosso Istituzionale — accento, max 10% */
+  --sai-verde:#13773B;    /* Verde Bandiera — dettagli tricolore */
+  --sai-crema:#FEFDF9;    /* Crema Carta — fondo pagina */
+  --sai-carta:#F5F1E8;    /* Carta Calda — sezioni alternate */
+  --sai-ink:#26292E;      /* Inchiostro — testo corpo */
+  --sai-bianco:#FFFFFF;
+  --sai-linea:rgba(10,42,69,0.22);
+  --sai-linea-forte:rgba(10,42,69,0.45);
+  --sai-font-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sai-font-body:Inter,system-ui,Arial,sans-serif;
+  /* scala tipografica: 15 · 17 · 19 · 22 · 26 · clamp titoli */
+  --sai-fs-xs:15px; --sai-fs-sm:17px; --sai-fs-base:19px; --sai-fs-lg:22px; --sai-fs-xl:26px;
+  --sai-radius:6px;
+  --sai-z-cta:800; --sai-z-header:900; --sai-z-overlay:10000;
+}
+
+.sai-app,.sai-app *{box-sizing:border-box}
+.sai-app{
+  font-family:var(--sai-font-body);
+  font-size:var(--sai-fs-base);line-height:1.5;
+  color:var(--sai-ink);background:var(--sai-crema);
+  -webkit-font-smoothing:antialiased;
+}
+/* Reset a specificità zero (:where) così le classi .sai-* di spaziatura vincono sempre */
+:where(.sai-app h1,.sai-app h2,.sai-app h3){font-family:var(--sai-font-display);color:var(--sai-blu);margin:0;font-weight:700}
+:where(.sai-app p,.sai-app ul){margin:0}
+.sai-app a{color:var(--sai-blu)}
+.sai-app button{font-family:var(--sai-font-body);cursor:pointer}
+.sai-app svg{flex:none}
+.sai-container{max-width:1160px;margin:0 auto;padding:0 20px}
+.sai-app section{scroll-margin-top:84px}
+.sai-eyebrow{font-size:var(--sai-fs-xs);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sai-rosso);margin-bottom:16px}
+.sai-section-title{font-size:clamp(1.7rem,3.4vw,2.35rem);line-height:1.18;margin-bottom:18px}
+.sai-section-sub{font-size:var(--sai-fs-base);line-height:1.6;max-width:640px;margin-bottom:8px}
+.sai-ico{width:24px;height:24px;color:var(--sai-blu)}
+.sai-ico--sm{width:20px;height:20px}
+.sai-ico--r{color:var(--sai-rosso)}
+.sai-app *:focus-visible{outline:3px solid var(--sai-blu);outline-offset:3px}
+
+/* ---- Logo (ricostruzione CSS del master) ---- */
+.sai-logo{display:inline-flex;align-items:stretch;gap:9px;text-decoration:none;line-height:1}
+.sai-logo-bars{display:flex;gap:4px}
+.sai-logo-bars i{display:block;width:5px}
+.sai-logo-bars .g{background:var(--sai-verde)}
+.sai-logo-bars .r{background:var(--sai-rosso)}
+.sai-logo-text{display:flex;flex-direction:column;justify-content:center;gap:2px}
+.sai-logo-word{font-family:var(--sai-font-display);font-weight:700;font-size:13px;line-height:1.05;letter-spacing:.06em;color:var(--sai-blu);text-transform:uppercase}
+.sai-logo-italia{align-self:flex-start;background:var(--sai-rosso);color:#fff;font-family:var(--sai-font-display);font-weight:700;font-size:10px;line-height:1;letter-spacing:.14em;padding:4px 6px 3px;margin-top:2px}
+.sai-logo--neg .sai-logo-word{color:#fff}
+
+/* ---- Bottoni ---- */
+.sai-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--sai-blu);color:#fff;
+  font-family:var(--sai-font-body);font-weight:700;font-size:20px;line-height:1.2;
+  padding:17px 30px;border:2px solid var(--sai-blu);border-radius:var(--sai-radius);
+  min-height:56px;cursor:pointer;text-decoration:none;text-align:center;
+  transition:background-color .2s ease,border-color .2s ease;
+}
+.sai-btn:hover{background:var(--sai-blu-hover);border-color:var(--sai-blu-hover)}
+.sai-btn:disabled,.sai-btn.is-loading{opacity:.7;cursor:wait}
+.sai-btn--sm{font-size:var(--sai-fs-sm);padding:12px 18px;min-height:48px}
+.sai-btn--block{display:flex;width:100%}
+.sai-btn--xl{font-size:22px;padding:21px 40px}
+.sai-btn--long{font-size:var(--sai-fs-base);padding:16px 18px}
+.sai-btn--long svg{width:24px;height:24px}
+.sai-btn svg{width:22px;height:22px}
+.sai-btn-ghost{background:none;border:0;color:var(--sai-blu);font-weight:600;font-size:var(--sai-fs-sm);cursor:pointer;padding:12px 6px;min-height:48px;display:inline-flex;align-items:center;gap:8px;text-decoration:underline;text-underline-offset:3px;transition:color .2s ease}
+.sai-btn-ghost:hover{color:var(--sai-blu-hover)}
+.sai-btn-ghost svg{width:18px;height:18px}
+
+/* ---- Header ---- */
+.sai-header{position:fixed;top:0;left:0;right:0;z-index:var(--sai-z-header);background:var(--sai-crema);border-bottom:1px solid var(--sai-linea);transition:border-color .2s ease}
+.sai-header.is-scrolled{border-bottom-color:var(--sai-blu)}
+.sai-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+/* ---- Hero ---- */
+.sai-hero{padding:116px 0 64px}
+.sai-hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.sai-hero h1{font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.12;margin-bottom:24px}
+.sai-hero-sub{font-size:clamp(1.19rem,2vw,1.35rem);line-height:1.6;max-width:600px;margin-bottom:34px}
+.sai-hero-note{display:flex;align-items:center;gap:10px;font-size:var(--sai-fs-sm);margin-top:18px;color:var(--sai-blu)}
+.sai-hero-trust{display:flex;flex-wrap:wrap;gap:14px 28px;margin-top:26px}
+.sai-hero-trust span{display:inline-flex;align-items:center;gap:8px;font-size:var(--sai-fs-sm);color:var(--sai-blu);font-weight:500}
+
+/* Scheda documentale (solo desktop) */
+.sai-scheda{display:none;background:#fff;border:1px solid var(--sai-blu);border-radius:var(--sai-radius);padding:26px 28px 30px;max-width:420px;margin:0 auto;position:relative}
+.sai-scheda-head{display:flex;align-items:center;gap:10px;font-family:var(--sai-font-display);font-weight:700;color:var(--sai-blu);font-size:var(--sai-fs-base);padding-bottom:16px;border-bottom:1px solid var(--sai-linea);margin-bottom:22px}
+.sai-scheda-head .sai-logo-bars{height:26px}
+.sai-scheda-row{margin-bottom:18px}
+.sai-scheda-row .lbl{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--sai-blu);font-weight:600;margin-bottom:8px}
+.sai-scheda-row .line{display:block;height:14px;border-bottom:1px solid var(--sai-blu);opacity:.55}
+.sai-scheda-stamp{position:absolute;right:22px;bottom:22px;transform:rotate(-7deg);border:2px solid var(--sai-rosso);color:var(--sai-rosso);font-family:var(--sai-font-display);font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:3px}
+
+/* ---- Come funziona ---- */
+.sai-how{padding:56px 0;background:var(--sai-carta);border-top:1px solid var(--sai-linea);border-bottom:1px solid var(--sai-linea)}
+.sai-how-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:32px}
+.sai-how-card{background:#fff;border:1px solid var(--sai-linea);border-radius:var(--sai-radius);padding:22px 22px 24px;display:flex;gap:16px;align-items:flex-start}
+.sai-how-num{flex:none;width:44px;height:44px;border-radius:50%;background:var(--sai-blu);color:#fff;font-family:var(--sai-font-display);font-weight:700;font-size:var(--sai-fs-lg);display:inline-flex;align-items:center;justify-content:center}
+.sai-how-card h3{font-size:var(--sai-fs-lg);line-height:1.25;margin-bottom:6px}
+.sai-how-card p{font-size:var(--sai-fs-sm);line-height:1.55}
+
+/* ---- È per te se ---- */
+.sai-forwho{padding:56px 0}
+.sai-forwho-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+.sai-forwho-list{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:18px}
+.sai-forwho-list li{display:flex;gap:12px;align-items:flex-start;font-size:var(--sai-fs-base);line-height:1.5;color:var(--sai-blu)}
+.sai-forwho-list li svg{width:26px;height:26px;color:var(--sai-verde);margin-top:1px}
+.sai-cta-card{background:var(--sai-carta);border:1px solid var(--sai-linea);border-radius:var(--sai-radius);padding:26px 24px}
+.sai-cta-card p{font-size:var(--sai-fs-base);line-height:1.55;margin-bottom:18px}
+
+/* ---- Strip fiducia ---- */
+.sai-strip{background:var(--sai-carta);border-top:1px solid var(--sai-linea);padding:26px 0}
+.sai-strip-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.sai-strip-item{display:flex;align-items:center;gap:12px;color:var(--sai-blu);font-weight:500;font-size:var(--sai-fs-base);line-height:1.35}
+.sai-strip-item svg{width:28px;height:28px}
+
+/* ---- Footer ---- */
+.sai-tricolore{height:6px;display:flex}
+.sai-tricolore i{flex:1;display:block}
+.sai-tricolore .g{background:var(--sai-verde)}
+.sai-tricolore .r{background:var(--sai-rosso)}
+.sai-footer{background:var(--sai-blu);color:var(--sai-crema);padding:44px 0 32px}
+.sai-footer-top{display:flex;flex-direction:column;gap:14px;align-items:flex-start;margin-bottom:28px}
+.sai-footer-payoff{font-family:var(--sai-font-display);font-style:italic;font-size:var(--sai-fs-base);color:var(--sai-crema)}
+.sai-footer-legal{border-top:1px solid rgba(254,253,249,0.28);padding-top:22px}
+.sai-footer-legal p{font-size:var(--sai-fs-sm);line-height:1.55;color:var(--sai-crema);margin-bottom:14px}
+.sai-footer-bottom{display:flex;flex-direction:column;gap:10px;font-size:var(--sai-fs-xs);color:var(--sai-crema);opacity:.85;margin-top:8px}
+.sai-footer-bottom a{color:var(--sai-crema);margin-right:16px}
+
+/* ---- Mobile sticky CTA ---- */
+.sai-mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:var(--sai-z-cta);padding:12px 16px;background:var(--sai-crema);border-top:1px solid var(--sai-blu);display:none}
+.sai-mobile-cta.is-visible{display:block}
+
+/* ---- Overlay quiz ---- */
+.sai-overlay{display:none;position:fixed;inset:0;z-index:var(--sai-z-overlay);background:var(--sai-crema);overflow-y:auto}
+.sai-overlay.is-open{display:block}
+.sai-quiz{max-width:640px;margin:0 auto;padding:18px 20px 60px;min-height:100%;display:flex;flex-direction:column}
+.sai-quiz-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.sai-close{background:none;border:1px solid var(--sai-linea);border-radius:var(--sai-radius);width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--sai-blu);transition:border-color .2s ease}
+.sai-close:hover{border-color:var(--sai-blu)}
+.sai-close svg{width:24px;height:24px}
+.sai-progress-wrap{margin-bottom:26px;display:none}
+.sai-progress-labels{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:var(--sai-fs-xs);color:var(--sai-blu);margin-bottom:8px;font-weight:600}
+.sai-phase{display:inline-flex;align-items:center;gap:6px;background:var(--sai-carta);border:1px solid var(--sai-linea);border-radius:999px;padding:4px 10px;font-size:14px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.sai-progress{height:8px;background:#fff;border:1px solid var(--sai-linea);border-radius:4px;overflow:hidden}
+.sai-progress-bar{height:100%;background:var(--sai-blu);width:0;transition:width .3s ease}
+.sai-step{display:none;animation:saiFadeIn .25s ease-out}
+.sai-step.is-active{display:block}
+@keyframes saiFadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.sai-quiz h2{font-size:clamp(1.55rem,4vw,2.1rem);line-height:1.2;margin-bottom:16px}
+.sai-q-sub{font-size:var(--sai-fs-sm);line-height:1.55;margin-bottom:26px;color:var(--sai-ink)}
+.sai-quiz-nav{margin-top:26px}
+.sai-box{background:var(--sai-carta);border:1px solid var(--sai-linea);border-radius:var(--sai-radius);padding:18px 20px;margin-bottom:22px;font-size:var(--sai-fs-base);line-height:1.6}
+.sai-box strong{color:var(--sai-blu)}
+
+/* Opzioni quiz */
+.sai-options{display:flex;flex-direction:column;gap:12px}
+.sai-opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#fff;color:var(--sai-blu);border:1px solid var(--sai-blu);border-radius:var(--sai-radius);padding:16px 18px;font-family:var(--sai-font-body);font-weight:500;font-size:var(--sai-fs-base);line-height:1.35;min-height:60px;cursor:pointer;transition:background-color .15s ease,color .15s ease}
+.sai-opt .sai-radio{flex:none;width:24px;height:24px;border-radius:50%;border:2px solid var(--sai-blu);display:inline-flex;align-items:center;justify-content:center}
+.sai-opt .sai-radio i{display:block;width:12px;height:12px;border-radius:50%;background:transparent}
+.sai-opt:hover{background:var(--sai-carta)}
+.sai-opt.selected{background:var(--sai-blu);color:#fff}
+.sai-opt.selected .sai-radio{border-color:#fff}
+.sai-opt.selected .sai-radio i{background:#fff}
+.sai-quiz-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;font-size:var(--sai-fs-xs);color:var(--sai-ink)}
+
+/* Form (un campo per schermata) */
+.sai-field{margin-bottom:18px}
+.sai-label{display:block;font-size:var(--sai-fs-sm);font-weight:600;color:var(--sai-blu);margin-bottom:8px}
+.sai-input{width:100%;background:#fff;border:1px solid var(--sai-blu);border-radius:var(--sai-radius);padding:15px 16px;font-family:var(--sai-font-body);font-size:var(--sai-fs-base);line-height:1.3;color:var(--sai-ink);min-height:58px;transition:border-color .2s ease}
+.sai-input::placeholder{color:#7A8290}
+.sai-input:focus{outline:3px solid var(--sai-blu);outline-offset:2px}
+.sai-input.is-invalid{border-color:var(--sai-rosso);border-width:2px}
+.sai-input-wrap{position:relative}
+.sai-input-wrap svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:22px;height:22px;color:var(--sai-blu)}
+.sai-input-wrap .sai-input{padding-left:50px}
+.sai-help{display:flex;gap:8px;align-items:flex-start;font-size:var(--sai-fs-xs);line-height:1.5;color:var(--sai-ink);margin-top:10px}
+.sai-help svg{width:18px;height:18px;color:var(--sai-blu);margin-top:2px}
+.sai-err{display:none;align-items:flex-start;gap:8px;color:var(--sai-rosso);font-size:var(--sai-fs-xs);font-weight:600;margin-top:10px;line-height:1.45}
+.sai-err.is-visible{display:flex}
+.sai-err svg{width:18px;height:18px;margin-top:1px}
+.sai-check{display:flex;align-items:flex-start;gap:12px;cursor:pointer;margin-top:12px;font-size:var(--sai-fs-xs);line-height:1.5;padding:12px 14px;border:1px solid var(--sai-linea);border-radius:var(--sai-radius);background:#fff;transition:border-color .2s ease}
+.sai-check:hover{border-color:var(--sai-blu)}
+.sai-check input{flex:none;width:24px;height:24px;margin:1px 0 0;accent-color:var(--sai-blu);cursor:pointer}
+.sai-trustline{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-size:var(--sai-fs-xs);color:var(--sai-blu);font-weight:500;margin-top:14px}
+.sai-trustline span{display:inline-flex;align-items:center;gap:6px}
+.sai-trustline svg{width:18px;height:18px;color:var(--sai-verde)}
+.sai-actions{display:flex;flex-direction:column;gap:6px;margin-top:22px}
+.sai-actions .sai-btn-ghost{align-self:flex-start}
+
+/* Micro-risultato / conferma / grazie */
+.sai-result{text-align:center;padding-top:14px}
+.sai-result h2{margin-bottom:18px}
+.sai-result p{font-size:var(--sai-fs-base);line-height:1.6;margin-bottom:18px;text-align:left}
+.sai-result .sai-btn{margin-top:8px}
+.sai-result-ico{width:64px;height:64px;border-radius:50%;background:var(--sai-blu);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.sai-result-ico svg{width:32px;height:32px}
+.sai-result-ico--soft{background:var(--sai-carta);color:var(--sai-blu);border:1px solid var(--sai-blu)}
+.sai-badge{display:inline-flex;align-items:center;gap:8px;background:var(--sai-carta);border:1px solid var(--sai-linea);border-radius:999px;padding:8px 14px;font-size:var(--sai-fs-xs);font-weight:600;color:var(--sai-blu);margin-bottom:18px}
+.sai-badge svg{width:18px;height:18px;color:var(--sai-verde)}
+.sai-badge--red{color:var(--sai-rosso);border-color:var(--sai-rosso)}
+.sai-badge--red svg{color:var(--sai-rosso)}
+.sai-info{display:flex;align-items:center;gap:10px;background:var(--sai-carta);border:1px solid var(--sai-linea);border-radius:var(--sai-radius);padding:14px 16px;font-size:var(--sai-fs-sm);color:var(--sai-blu);font-weight:500;line-height:1.4;text-align:left;margin:14px 0 20px}
+.sai-info svg{width:22px;height:22px}
+.sai-emph{color:var(--sai-rosso);font-weight:700}
+.sai-upsell{display:none;text-align:left;background:var(--sai-carta);border-left:4px solid var(--sai-rosso);padding:16px 18px;border-radius:0 var(--sai-radius) var(--sai-radius) 0;margin:8px 0 18px;font-size:var(--sai-fs-base);line-height:1.6}
+.sai-upsell.is-visible{display:block}
+.sai-next{list-style:none;margin:0 0 18px;padding:0;text-align:left;display:flex;flex-direction:column;gap:12px}
+.sai-next li{display:flex;gap:12px;align-items:flex-start;font-size:var(--sai-fs-base);line-height:1.5}
+.sai-next li .sai-how-num{width:36px;height:36px;font-size:var(--sai-fs-sm)}
+.sai-spinner{width:44px;height:44px;border:4px solid var(--sai-linea);border-top-color:var(--sai-blu);border-radius:50%;margin:60px auto 20px;animation:saiSpin 1s linear infinite}
+@keyframes saiSpin{to{transform:rotate(360deg)}}
+.sai-fine{font-size:var(--sai-fs-xs);color:var(--sai-ink);text-align:center;margin-top:16px;display:flex;justify-content:center;align-items:center;gap:6px}
+.sai-fine svg{width:16px;height:16px;color:var(--sai-blu)}
+.sai-fine strong{color:var(--sai-verde)}
+
+/* ---- Responsive ---- */
+@media (min-width:768px){
+  .sai-how-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+  .sai-how-card{flex-direction:column;gap:14px}
+  .sai-forwho-grid{grid-template-columns:1.1fr .9fr;gap:48px}
+  .sai-strip-grid{grid-template-columns:repeat(3,1fr);gap:24px}
+  .sai-footer-top{flex-direction:row;justify-content:space-between;align-items:center}
+  .sai-footer-bottom{flex-direction:row;justify-content:space-between}
+  .sai-actions{flex-direction:row-reverse;justify-content:space-between;align-items:center}
+}
+@media (min-width:1024px){
+  .sai-hero{padding:150px 0 90px}
+  .sai-hero-grid{grid-template-columns:1.15fr .85fr;gap:56px}
+  .sai-scheda{display:block}
+  .sai-mobile-cta{display:none !important}
+}
+@media (max-width:1023px){
+  .sai-footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  .sai-step{animation:none}
+  .sai-progress-bar,.sai-btn,.sai-opt,.sai-input,.sai-check{transition:none}
+}
+</style>
+<!-- SAI:EMBED-HEAD-END -->
+<style>
+/* Solo pagina standalone (in Elementor eredita dal tema) */
+html{scroll-behavior:smooth}
+body{margin:0;background:#FEFDF9}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<style>
+/* Solo anteprima */
+.sai-preview-pill{position:fixed;right:12px;bottom:12px;z-index:20000;background:#AC3625;color:#fff;font:600 13px/1 Inter,system-ui,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px;pointer-events:none}
+@media (max-width:1023px){.sai-preview-pill{bottom:86px}}
+</style>
+</head>
+
+<body>
+<!-- SAI:EMBED-BODY-START -->
+<div class="sai-app" id="sai-app">
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header class="sai-header" id="sai-header">
+  <div class="sai-container sai-header-inner">
+    <a href="#sai-hero" class="sai-logo" aria-label="Sportello Agevolazioni Italia">
+      <span class="sai-logo-bars"><i class="g"></i><i class="r"></i></span>
+      <span class="sai-logo-text">
+        <span class="sai-logo-word">Sportello</span>
+        <span class="sai-logo-word">Agevolazioni</span>
+        <span class="sai-logo-italia">ITALIA</span>
+      </span>
+    </a>
+    <button type="button" class="sai-btn sai-btn--sm" onclick="saiOpenQuiz('header')">Verifica i requisiti</button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="sai-hero" id="sai-hero">
+  <div class="sai-container sai-hero-grid">
+    <div>
+      <p class="sai-eyebrow">Eliminazione del debito · Verifica dei requisiti</p>
+      <h1>Hai debiti che non riesci più a pagare? La legge prevede una via d'uscita.</h1>
+      <p class="sai-hero-sub">
+        Rispondi a poche domande, bastano 4 minuti. Scopri se rientri nei requisiti previsti dalla legge per ridurre o eliminare i debiti. Se rientri, ti chiama un consulente specializzato nell'eliminazione del debito. Il servizio è gratuito e senza impegno.
+      </p>
+      <button type="button" class="sai-btn sai-btn--xl" onclick="saiOpenQuiz('hero')">Verifica i requisiti <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></button>
+      <p class="sai-hero-note">
+        <svg class="sai-ico" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/></svg>
+        Bastano 4 minuti · Gratuito · Senza impegno
+      </p>
+      <div class="sai-hero-trust">
+        <span><svg class="sai-ico" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Consulenti specializzati nell'eliminazione del debito</span>
+        <span><svg class="sai-ico" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Servizio privato di informazione e orientamento</span>
+      </div>
+    </div>
+
+    <div class="sai-scheda" aria-hidden="true">
+      <div class="sai-scheda-head">
+        <span class="sai-logo-bars"><i class="g"></i><i class="r"></i></span>
+        <span>Scheda di verifica requisiti</span>
+      </div>
+      <div class="sai-scheda-row"><span class="lbl">Importo complessivo dei debiti</span><span class="line"></span></div>
+      <div class="sai-scheda-row"><span class="lbl">Tipo di creditori</span><span class="line"></span></div>
+      <div class="sai-scheda-row"><span class="lbl">Situazione con i creditori</span><span class="line"></span></div>
+      <div class="sai-scheda-row"><span class="lbl">Situazione lavorativa</span><span class="line"></span></div>
+      <div class="sai-scheda-stamp">Verifica gratuita</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ COME FUNZIONA ═══════════ -->
+<section class="sai-how" id="sai-come-funziona">
+  <div class="sai-container">
+    <p class="sai-eyebrow">Come funziona</p>
+    <h2 class="sai-section-title">Tre passaggi. Nessun documento da preparare adesso.</h2>
+    <p class="sai-section-sub">La verifica serve a capire se la tua situazione rientra tra quelle previste dalla legge. Il resto lo vedi al telefono con il consulente.</p>
+    <div class="sai-how-grid">
+      <div class="sai-how-card">
+        <span class="sai-how-num">1</span>
+        <div><h3>Rispondi alle domande</h3><p>Undici domande sulla tua situazione: importo, creditori, rate. Un tocco per risposta, circa 4 minuti.</p></div>
+      </div>
+      <div class="sai-how-card">
+        <span class="sai-how-num">2</span>
+        <div><h3>Leggi l'esito</h3><p>Ti diciamo subito se rientri nei requisiti. Solo allora ti chiediamo nome, telefono ed email.</p></div>
+      </div>
+      <div class="sai-how-card">
+        <span class="sai-how-num">3</span>
+        <div><h3>Ti chiama un consulente</h3><p>Un consulente specializzato nell'eliminazione del debito ti chiama per verificare i requisiti. Gratuito e senza impegno.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ È PER TE SE ═══════════ -->
+<section class="sai-forwho">
+  <div class="sai-container sai-forwho-grid">
+    <div>
+      <p class="sai-eyebrow">A chi si rivolge</p>
+      <h2 class="sai-section-title">La verifica è pensata per chi…</h2>
+      <ul class="sai-forwho-list">
+        <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>ha debiti con banche, finanziarie o cartelle esattoriali che non riesce più a sostenere</li>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>ha smesso di pagare le rate, o ha già ricevuto solleciti, ingiunzioni o pignoramenti</li>
+        <li><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>vuole sapere quali tutele prevede la legge nel suo caso, prima di parlare con qualcuno</li>
+      </ul>
+    </div>
+    <div class="sai-cta-card">
+      <h3 class="sai-section-title" style="font-size:1.5rem">Verifica se rientri nei requisiti</h3>
+      <p>Poche domande, nessun documento. Alla fine sai se la tua situazione può essere valutata da un consulente specializzato.</p>
+      <button type="button" class="sai-btn sai-btn--block" onclick="saiOpenQuiz('forwho')">Inizia la verifica <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></button>
+      <p class="sai-fine"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>Gratuito e senza impegno · dati protetti</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STRIP FIDUCIA ═══════════ -->
+<section class="sai-strip">
+  <div class="sai-container sai-strip-grid">
+    <div class="sai-strip-item"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Verifica gratuita e senza impegno</span></div>
+    <div class="sai-strip-item"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg><span>Consulenti specializzati nell'eliminazione del debito</span></div>
+    <div class="sai-strip-item"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg><span>I tuoi dati non vengono ceduti senza il tuo consenso</span></div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<div class="sai-tricolore" aria-hidden="true"><i class="g"></i><i class="r"></i></div>
+<footer class="sai-footer">
+  <div class="sai-container">
+    <div class="sai-footer-top">
+      <a href="#sai-hero" class="sai-logo sai-logo--neg" aria-label="Sportello Agevolazioni Italia">
+        <span class="sai-logo-bars"><i class="g"></i><i class="r"></i></span>
+        <span class="sai-logo-text">
+          <span class="sai-logo-word">Sportello</span>
+          <span class="sai-logo-word">Agevolazioni</span>
+          <span class="sai-logo-italia">ITALIA</span>
+        </span>
+      </a>
+      <p class="sai-footer-payoff">Dalla parte delle famiglie italiane.</p>
+    </div>
+    <div class="sai-footer-legal">
+      <p><strong>Sportello Agevolazioni Italia è un servizio privato di informazione e orientamento. Non è collegato né affiliato a enti pubblici, INPS, Agenzia delle Entrate o altre amministrazioni.</strong></p>
+      <p>Sportello Agevolazioni Italia non eroga consulenza legale o finanziaria: raccoglie la richiesta, verifica i requisiti di base e la trasmette a consulenti e società partner specializzate nell'eliminazione del debito, che ti contatteranno direttamente. L'esito di ogni pratica dipende dalla valutazione del partner e dalla normativa applicabile: nessun risultato può essere garantito.</p>
+      <div class="sai-footer-bottom">
+        <span>© 2026 Sportello Agevolazioni Italia · {RAGIONE_SOCIALE} · P.IVA {P_IVA}</span>
+        <span><a data-sai="privacy-url" href="#privacy" target="_blank" rel="noopener">Privacy Policy</a><a data-sai="cookie-url" href="#cookie" target="_blank" rel="noopener">Cookie Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════ MOBILE STICKY CTA ═══════════ -->
+<div class="sai-mobile-cta" id="sai-mobile-cta">
+  <button type="button" class="sai-btn sai-btn--block" onclick="saiOpenQuiz('mobile-sticky')">Verifica i requisiti <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></button>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ═══════════ QUIZ OVERLAY ═══════════════ -->
+<!-- ═══════════════════════════════════════ -->
+<div class="sai-overlay" id="sai-overlay" role="dialog" aria-modal="true" aria-label="Verifica dei requisiti">
+  <div class="sai-quiz">
+
+    <div class="sai-quiz-top">
+      <span class="sai-logo" aria-hidden="true">
+        <span class="sai-logo-bars"><i class="g"></i><i class="r"></i></span>
+        <span class="sai-logo-text">
+          <span class="sai-logo-word">Sportello</span>
+          <span class="sai-logo-word">Agevolazioni</span>
+          <span class="sai-logo-italia">ITALIA</span>
+        </span>
+      </span>
+      <button type="button" class="sai-close" onclick="saiCloseQuiz()" aria-label="Chiudi la verifica">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Progress: unica barra su tutto il percorso (domande → recapiti → conferma) -->
+    <div class="sai-progress-wrap" id="sai-progress-wrap">
+      <div class="sai-progress-labels">
+        <span id="sai-step-label">Domanda 1 di 11</span>
+        <span class="sai-phase" id="sai-phase">1/3 · Domande</span>
+      </div>
+      <div class="sai-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="sai-progress"><div class="sai-progress-bar" id="sai-progress-bar"></div></div>
+    </div>
+
+    <div style="flex:1">
+
+      <!-- ───── STEP: DOMANDE (generate da JS) ───── -->
+      <div class="sai-step" data-step="questions">
+        <h2 id="sai-q-text"></h2>
+        <p class="sai-q-sub" id="sai-q-sub"></p>
+        <div class="sai-options" id="sai-q-options" role="group" aria-labelledby="sai-q-text"></div>
+        <div class="sai-quiz-nav">
+          <button type="button" class="sai-btn-ghost" id="sai-q-back" onclick="saiPrevQuestion()">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+            Indietro
+          </button>
+          <span>Tocca una risposta per continuare</span>
+        </div>
+      </div>
+
+      <!-- ───── STEP: VERIFICA IN CORSO ───── -->
+      <div class="sai-step sai-result" data-step="loading" aria-live="polite">
+        <div class="sai-spinner" aria-hidden="true"></div>
+        <p style="text-align:center">Stiamo verificando le tue risposte...</p>
+      </div>
+
+      <!-- ───── STEP: MICRO-RISULTATO — POTRESTI RIENTRARE ───── -->
+      <div class="sai-step sai-result" data-step="result-in">
+        <div class="sai-result-ico">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        </div>
+        <span class="sai-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>Verifica completata</span>
+        <h2>In base alle tue risposte rientri nei requisiti.</h2>
+        <p>La tua situazione rientra tra quelle che i consulenti partner possono valutare. Per la verifica finale serve una chiamata con un consulente specializzato nell'eliminazione del debito: gratuita e senza impegno.</p>
+        <p>Nel prossimo passaggio ti chiediamo nome, telefono ed email. Il telefono serve solo per la chiamata del consulente.</p>
+        <button type="button" class="sai-btn sai-btn--block" onclick="saiGoContact()">Lascia i recapiti <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></button>
+        <p class="sai-trustline"><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Gratuito</span><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Senza impegno</span><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Dati protetti</span></p>
+      </div>
+
+      <!-- ───── STEP: MICRO-RISULTATO — NON RIENTRA ───── -->
+      <div class="sai-step sai-result" data-step="result-out">
+        <div class="sai-result-ico sai-result-ico--soft">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0 3.75h.008v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h2>Grazie per le tue risposte sincere.</h2>
+        <p>In base a quello che ci hai raccontato, al momento la tua situazione non rientra tra quelle che i consulenti partner possono valutare. Preferiamo dirtelo subito, senza farti perdere tempo.</p>
+        <p>Per un primo orientamento gratuito puoi rivolgerti a un CAF, a un patronato o a un'associazione dei consumatori della tua zona. Se la tua situazione cambia, puoi rifare la verifica quando vuoi.</p>
+        <button type="button" class="sai-btn sai-btn--block" id="sai-out-cta" onclick="saiCloseQuiz()">Chiudi</button>
+      </div>
+
+      <!-- ───── STEP: RECAPITI (nome + telefono + email + consensi, un solo form) ───── -->
+      <div class="sai-step" data-step="contact">
+        <form id="sai-contact-form" novalidate>
+          <h2>I tuoi recapiti</h2>
+          <p class="sai-q-sub">Servono al consulente per chiamarti e per inviarti la conferma della richiesta. Il telefono viene usato solo per la chiamata.</p>
+          <div class="sai-field">
+            <label class="sai-label" for="sai-nome">Nome e cognome</label>
+            <input type="text" id="sai-nome" name="nome" class="sai-input" autocomplete="name" autocapitalize="words" required aria-describedby="sai-err-nome">
+            <p class="sai-err" id="sai-err-nome" role="alert"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span>Scrivi il tuo nome e cognome.</span></p>
+          </div>
+          <div class="sai-field">
+            <label class="sai-label" for="sai-tel">Numero di telefono</label>
+            <div class="sai-input-wrap">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              <input type="tel" id="sai-tel" name="telefono" class="sai-input" autocomplete="tel" inputmode="tel" placeholder="es. 333 1234567" required aria-describedby="sai-help-tel sai-err-tel">
+            </div>
+            <p class="sai-help" id="sai-help-tel"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg><span>Ti chiamerà un consulente dedicato per verificare i tuoi requisiti. Servizio gratuito e senza impegno.</span></p>
+            <p class="sai-err" id="sai-err-tel" role="alert"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span>Scrivi un numero di telefono valido, ad esempio 333 1234567.</span></p>
+          </div>
+          <div class="sai-field">
+            <label class="sai-label" for="sai-email">Indirizzo email</label>
+            <input type="email" id="sai-email" name="email" class="sai-input" autocomplete="email" inputmode="email" placeholder="nome@email.it" required aria-describedby="sai-err-email">
+            <p class="sai-err" id="sai-err-email" role="alert"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span>Scrivi un indirizzo email valido.</span></p>
+          </div>
+          <label class="sai-check" for="sai-consenso-privacy">
+            <input type="checkbox" id="sai-consenso-privacy" required>
+            <span>Ho letto l'<a data-sai="privacy-url" href="#privacy" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato in merito alla mia richiesta.</span>
+          </label>
+          <label class="sai-check" for="sai-consenso-partner">
+            <input type="checkbox" id="sai-consenso-partner" required>
+            <span>Acconsento alla comunicazione dei miei dati a consulenti e società partner specializzate nell'eliminazione del debito, che potranno contattarmi, anche per finalità di marketing, per proporre i loro servizi.</span>
+          </label>
+          <p class="sai-err" id="sai-err-consensi" role="alert"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span>Spunta entrambi i consensi: senza, non possiamo metterti in contatto con un consulente.</span></p>
+          <div class="sai-actions">
+            <button type="submit" class="sai-btn sai-btn--block">Continua <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></button>
+            <button type="button" class="sai-btn-ghost" onclick="saiShowStep('result-in')"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>Indietro</button>
+          </div>
+          <p class="sai-trustline"><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Gratuito</span><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Senza impegno</span><span><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Dati protetti</span></p>
+        </form>
+      </div>
+
+      <!-- ───── STEP: ULTIMO PASSAGGIO — CONFERMA NUMERO ───── -->
+      <div class="sai-step sai-result" data-step="confirm">
+        <form id="sai-confirm-form" novalidate>
+          <div class="sai-result-ico sai-result-ico--soft">
+            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          </div>
+          <div><span class="sai-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>Ultimo passaggio</span></div>
+          <h2>Ultimo passo: conferma il tuo numero</h2>
+          <p style="text-align:center">Un consulente specializzato nell'eliminazione del debito ti chiamerà a questo numero per verificare i requisiti. <span class="sai-emph">Reinserisci il tuo numero per conferma:</span></p>
+          <div class="sai-field" style="text-align:left">
+            <label class="sai-label" for="sai-tel-confirm">Numero di telefono (di nuovo)</label>
+            <div class="sai-input-wrap">
+              <svg class="sai-ico--r" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              <input type="tel" id="sai-tel-confirm" name="telefono_conferma" class="sai-input" autocomplete="off" inputmode="tel" placeholder="es. 333 1234567" required aria-describedby="sai-err-tel-confirm">
+            </div>
+            <p class="sai-err" id="sai-err-tel-confirm" role="alert"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg><span>I due numeri non coincidono. Controlla e riscrivilo, oppure torna indietro e correggi il numero.</span></p>
+          </div>
+          <div class="sai-info"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span>Riceverai una chiamata <strong data-sai="sla">entro poche ore</strong></span></div>
+          <button type="submit" class="sai-btn sai-btn--block sai-btn--long" id="sai-confirm-btn"><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span id="sai-confirm-btn-text">Confermo — chiamatemi a questo numero</span></button>
+          <div style="margin-top:6px"><button type="button" class="sai-btn-ghost" onclick="saiGoContact()"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>Torna indietro e modifica i dati</button></div>
+          <p class="sai-fine"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>Verifica <strong>gratuita</strong> e senza impegno</p>
+        </form>
+      </div>
+
+      <!-- ───── STEP: GRAZIE ───── -->
+      <div class="sai-step sai-result" data-step="thanks" aria-live="polite">
+        <div class="sai-result-ico">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        </div>
+        <span class="sai-badge"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Richiesta inviata</span>
+        <h2>Fatto, <span id="sai-res-nome">[Nome]</span>. La tua richiesta è stata inviata.</h2>
+        <p>Ecco cosa succede adesso:</p>
+        <ul class="sai-next">
+          <li><span class="sai-how-num">1</span><span>Un consulente specializzato nell'eliminazione del debito ti chiama <strong data-sai="sla">entro poche ore</strong> al numero <strong id="sai-res-tel"></strong>.</span></li>
+          <li><span class="sai-how-num">2</span><span>Insieme verificate i requisiti e i documenti che servono. La chiamata è gratuita e senza impegno.</span></li>
+          <li><span class="sai-how-num">3</span><span>Se la tua situazione può essere seguita, il consulente ti spiega i passaggi successivi. Decidi tu se andare avanti.</span></li>
+        </ul>
+        <div class="sai-upsell" id="sai-upsell">
+          <strong>Sei dipendente o pensionato?</strong> Potresti avere diritto anche all'agevolazione creditizia riservata alla tua categoria. Il consulente potrà verificarlo durante la chiamata.
+        </div>
+        <p style="text-align:center">A presto.<br>Sportello Agevolazioni Italia</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div><!-- /sai-app -->
+
+<script>
+/* ════════════════════════════════════════════════════════
+   SPORTELLO AGEVOLAZIONI ITALIA — QUIZ FUNNEL ENGINE v2
+   Flusso: domande (11) → verifica → micro-risultato → recapiti (nome + telefono + email + consensi, un form)
+           → conferma numero (doppio inserimento) → grazie
+   Cattura lead: parziale all'invio dei recapiti (telefono NON confermato),
+                 completa alla conferma del numero (telefono confermato) → evento Lead.
+   REGOLA: zero backslash. Stringhe con apostrofo tra doppi apici.
+   ════════════════════════════════════════════════════════ */
+
+/* ---- CONFIG: qui vivono i placeholder aperti. Chiuderli prima del go-live. ---- */
+var SAI_CONFIG = {
+  VERTICAL: "eliminazione-debiti",
+  CONTENT_NAME: "sai-eliminazione-debiti",
+  SLA_TEXT: "entro poche ore",              /* PLACEHOLDER {SLA} — confermare con il buyer */
+  SOGLIA_MIN_BUCKET: 0,                     /* 0 = l'importo NON squalifica (decisione 17/08/2026). Se il buyer chiede una soglia: 1 = da 10.000 euro, 2 = da 30.000 euro */
+  LEAD_VALUE_BY_TIER: { PREMIUM: null, IN: null, BORDERLINE: null }, /* PLACEHOLDER {LEAD_VALUE} — euro stimati per tier, li dà il buyer */
+  CAPTURE_OUT_LEADS: false,                 /* true = anche chi NON rientra passa dai recapiti (lead non vendibile, nessun evento Lead) */
+  PRIVACY_URL: "#privacy",                  /* PLACEHOLDER dominio */
+  COOKIE_URL: "#cookie",                    /* PLACEHOLDER dominio */
+  LEAD_ENDPOINT: "",                        /* es. "/api/lead" — vuoto = solo console.log (nessun invio) */
+  QUIZ_MINUTES: 4
+};
+
+/* ---- Domande (tono SAI: sportello, "tu", niente gergo) ----
+   value: valore usato dalla matrice decisionale (stessa logica Debito Zen).
+   "lavorativa": richiesta dalla brand identity §7 — non incide sull'esito, va nel payload
+   per il buyer e attiva l'upsell CDQ nella pagina finale.
+*/
+var SAI_QUESTIONS = [
+  {
+    id: "importo",
+    text: "Qual è l'importo complessivo dei tuoi debiti?",
+    sub: "Una stima va benissimo. Rispondi con sincerità: serve solo a capire se rientri nei requisiti.",
+    options: [
+      { label: "Meno di 10.000 €", value: 0 },
+      { label: "Da 10.000 € a 30.000 €", value: 1 },
+      { label: "Da 30.000 € a 100.000 €", value: 2 },
+      { label: "Da 100.000 € a 500.000 €", value: 3 },
+      { label: "Oltre 500.000 €", value: 4 }
+    ]
+  },
+  {
+    id: "tipologia",
+    text: "Con chi hai i debiti?",
+    sub: "Se ne hai più di uno, scegli quello che pesa di più.",
+    options: [
+      { label: "Agenzia delle Entrate-Riscossione, cartelle esattoriali", value: 1 },
+      { label: "Banche o finanziarie (prestiti, finanziamenti, carte)", value: 3 },
+      { label: "Più tipi di debito insieme", value: 5 }
+    ]
+  },
+  {
+    id: "durata",
+    text: "Da quanto tempo convivi con questi debiti?",
+    sub: "",
+    options: [
+      { label: "Meno di 6 mesi", value: 1 },
+      { label: "Da 6 a 18 mesi", value: 2 },
+      { label: "Da 18 mesi a 3 anni", value: 3 },
+      { label: "Oltre 3 anni", value: 4 }
+    ]
+  },
+  {
+    id: "creditori",
+    text: "A che punto sei con i creditori?",
+    sub: "",
+    options: [
+      { label: "Solo solleciti o telefonate", value: 1 },
+      { label: "Ho ricevuto cartelle, ingiunzioni o precetti", value: 2 },
+      { label: "Ho già pignoramenti, fermi auto o ipoteche", value: 3 },
+      { label: "Nessun atto, voglio prevenire", value: 4 }
+    ]
+  },
+  {
+    id: "tentativi",
+    text: "Hai già provato a risolvere prima di scriverci?",
+    sub: "",
+    options: [
+      { label: "Sì, con un consulente o un professionista, senza risultato", value: 1 },
+      { label: "Sì, da solo (piani di rientro, rateizzazioni), senza risultato", value: 2 },
+      { label: "No, è la prima volta che chiedo aiuto", value: 3 },
+      { label: "Sto solo confrontando opzioni, non ho ancora deciso", value: 4 }
+    ]
+  },
+  {
+    id: "intenzione",
+    text: "Quanto è concreta la tua intenzione di risolvere?",
+    sub: "Rispondi con sincerità: ci aiuta a capire come muoverci.",
+    options: [
+      { label: "Voglio risolvere il prima possibile", value: 1 },
+      { label: "Voglio risolvere entro 1-2 mesi", value: 2 },
+      { label: "Sto valutando, deciderò nei prossimi mesi", value: 3 },
+      { label: "Per ora raccolgo solo informazioni", value: 4 }
+    ]
+  },
+  {
+    id: "lavorativa",
+    text: "Qual è la tua situazione lavorativa?",
+    sub: "Serve al consulente per individuare le tutele adatte al tuo caso.",
+    options: [
+      { label: "Dipendente", value: 1 },
+      { label: "Pensionato", value: 2 },
+      { label: "Autonomo o Partita IVA", value: 3 },
+      { label: "Disoccupato", value: 4 }
+    ]
+  },
+  {
+    id: "sostenibilita",
+    text: "Quale di queste descrive meglio la tua situazione economica?",
+    sub: "Le procedure previste dalla legge richiedono di solito un lavoro tecnico e una quota da destinare ai creditori. Meglio dirlo subito.",
+    options: [
+      { label: "Ho un reddito stabile e posso sostenere un percorso", value: 1 },
+      { label: "Ho un reddito ma posso pagare solo a piccole rate", value: 2 },
+      { label: "Ho entrate irregolari, da valutare caso per caso", value: 3 },
+      { label: "Al momento non ho entrate sufficienti", value: 4 }
+    ]
+  },
+  {
+    id: "priorita",
+    text: "Se tra 30 giorni la tua situazione fosse identica a oggi, come ti sentiresti?",
+    sub: "Stessi debiti, stessi creditori, stesse telefonate.",
+    options: [
+      { label: "Sarebbe un problema serio, non posso permettermelo", value: 1 },
+      { label: "Sarebbe difficile, ma reggerei ancora un po'", value: 2 },
+      { label: "Tutto sommato non cambierebbe molto", value: 3 },
+      { label: "Non ci ho ancora pensato", value: 4 }
+    ]
+  },
+  {
+    id: "documenti",
+    text: "Quanto sei pronto sul fronte documenti?",
+    sub: "Per avviare una pratica servono di solito: estratto di ruolo dell'Agenzia delle Entrate-Riscossione, ultimi atti ricevuti e la tua situazione reddituale (busta paga, cedolino pensione, CU o dichiarazione dei redditi).",
+    options: [
+      { label: "Ho tutto pronto o posso recuperarlo in pochi giorni", value: 1 },
+      { label: "Ho una parte, il resto lo recupero", value: 2 },
+      { label: "Non ho nulla e non so da dove iniziare", value: 3 },
+      { label: "Preferirei non condividere documenti per ora", value: 4 }
+    ]
+  },
+  {
+    id: "decisione",
+    text: "Una decisione come questa, nel tuo caso, chi la prende?",
+    sub: "Ultima domanda.",
+    options: [
+      { label: "Decido da solo, posso muovermi subito", value: 1 },
+      { label: "Ne parlo con una persona di fiducia, ma decido io", value: 2 },
+      { label: "La decisione la prendiamo insieme ad altri", value: 3 },
+      { label: "Non ne ho ancora parlato con nessuno", value: 4 }
+    ]
+  }
+];
+
+/* ---- Matrice decisionale (decisione Tommaso 17/08/2026) ----
+   OUT (nessun evento Lead) SOLO se:
+   1. nessuna entrata E disoccupato  → sostenibilita = 4 ("Al momento non ho entrate sufficienti") E lavorativa = 4 ("Disoccupato")
+   2. nessuna fretta di risolvere    → intenzione = 4 ("Per ora raccolgo solo informazioni")
+   Tutto il resto passa. Importo, tentativi, priorità, documenti, decisione NON squalificano più:
+   restano dati di qualifica per il buyer (tier + payload). SOGLIA_MIN_BUCKET resta in CONFIG
+   per riattivare la soglia sull'importo se il buyer la chiede (0 = disattivata).
+*/
+function saiEvaluateLead(ans) {
+  var out = [];
+  if (ans.sostenibilita === 4 && ans.lavorativa === 4) out.push("nessuna entrata e disoccupato");
+  if (ans.intenzione === 4) out.push("nessuna fretta di risolvere (solo informazioni)");
+  if (SAI_CONFIG.SOGLIA_MIN_BUCKET > 0 && ans.importo < SAI_CONFIG.SOGLIA_MIN_BUCKET) out.push("importo sotto soglia minima");
+
+  var isOut = out.length > 0;
+
+  var premium =
+    !isOut &&
+    (ans.creditori === 2 || ans.creditori === 3) &&
+    ans.intenzione === 1 &&
+    ans.sostenibilita === 1 &&
+    ans.priorita === 1 &&
+    (ans.documenti === 1 || ans.documenti === 2) &&
+    (ans.decisione === 1 || ans.decisione === 2);
+
+  var borderline =
+    !isOut && !premium &&
+    (ans.sostenibilita === 2 || ans.priorita === 2 || ans.documenti === 2 || ans.decisione === 2);
+
+  var tier = "IN";
+  if (isOut) tier = "OUT";
+  else if (premium) tier = "PREMIUM";
+  else if (borderline) tier = "BORDERLINE";
+
+  var urgent = ans.creditori === 3;
+  var occupazione = ["", "dipendente", "pensionato", "autonomo", "disoccupato"][ans.lavorativa] || "";
+  var upsellCdq = ans.lavorativa === 1 || ans.lavorativa === 2;
+
+  return { tier: tier, isOut: isOut, outReasons: out, premium: premium, borderline: borderline, urgent: urgent, occupazione: occupazione, upsellCdq: upsellCdq };
+}
+
+/* ════════════════════════════════════════════════════════
+   STATE & NAVIGATION
+   ════════════════════════════════════════════════════════ */
+var SAI_STEP_TOTAL = SAI_QUESTIONS.length + 2; /* 11 domande + recapiti + conferma */
+var saiState = {
+  lead: {},          /* nome, telefono, email, consensi */
+  answers: {},
+  result: null,
+  current: -1,
+  source: "",
+  eventId: "",
+  contactComplete: false,
+  submitted: false
+};
+window.SAI_EVENTS = []; /* log eventi per QA/debug */
+
+var saiOverlay = document.getElementById("sai-overlay");
+var saiSteps = {};
+Array.prototype.forEach.call(document.querySelectorAll("#sai-overlay .sai-step"), function (el) { saiSteps[el.getAttribute("data-step")] = el; });
+
+function saiMakeEventId() {
+  return "sai-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+}
+
+function saiSetProgress(stepIndex, label, phase) {
+  var pct = Math.round((stepIndex / SAI_STEP_TOTAL) * 100);
+  document.getElementById("sai-step-label").textContent = label;
+  document.getElementById("sai-phase").textContent = phase;
+  document.getElementById("sai-progress-bar").style.width = pct + "%";
+  document.getElementById("sai-progress").setAttribute("aria-valuenow", String(pct));
+}
+
+function saiShowStep(name) {
+  Object.keys(saiSteps).forEach(function (k) { saiSteps[k].classList.remove("is-active"); });
+  if (saiSteps[name]) saiSteps[name].classList.add("is-active");
+  var withProgress = (name === "questions" || name === "contact" || name === "confirm");
+  document.getElementById("sai-progress-wrap").style.display = withProgress ? "block" : "none";
+  saiOverlay.scrollTop = 0;
+  var h2 = saiSteps[name] ? saiSteps[name].querySelector("h2") : null;
+  if (h2 && name !== "questions") { h2.setAttribute("tabindex", "-1"); }
+}
+
+function saiOpenQuiz(source) {
+  saiState.source = source || "unknown";
+  if (!saiState.eventId) saiState.eventId = saiMakeEventId();
+  saiOverlay.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+  if (saiState.submitted) { saiShowStep("thanks"); return; }
+  if (saiState.current < 0) saiState.current = 0;
+  saiGoToQuestion(saiState.current);
+  saiTrackEvent("quiz_open", { source: saiState.source });
+}
+
+function saiCloseQuiz() {
+  saiOverlay.classList.remove("is-open");
+  document.body.style.overflow = "";
+}
+
+/* ---- DOMANDE ---- */
+function saiGoToQuestion(idx) {
+  saiState.current = idx;
+  saiRenderQuestion();
+  saiShowStep("questions");
+}
+
+function saiProgressHint(step, total) {
+  var r = step / total;
+  if (r < 0.34) return "iniziamo";
+  if (r < 0.75) return "sei a buon punto";
+  return "manca pochissimo";
+}
+
+function saiRenderQuestion() {
+  var q = SAI_QUESTIONS[saiState.current];
+  var total = SAI_QUESTIONS.length;
+  document.getElementById("sai-q-text").textContent = q.text;
+  var sub = document.getElementById("sai-q-sub");
+  sub.textContent = q.sub || "";
+  sub.style.display = q.sub ? "block" : "none";
+
+  var stepNum = saiState.current + 1;
+  saiSetProgress(stepNum, "Domanda " + stepNum + " di " + total + " — " + saiProgressHint(stepNum, total), "1/3 · Domande");
+  document.getElementById("sai-q-back").style.visibility = saiState.current === 0 ? "hidden" : "visible";
+
+  var wrap = document.getElementById("sai-q-options");
+  wrap.innerHTML = "";
+  q.options.forEach(function (opt) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "sai-opt";
+    btn.setAttribute("role", "radio");
+    var selected = saiState.answers[q.id] === opt.value;
+    btn.setAttribute("aria-checked", selected ? "true" : "false");
+    if (selected) btn.classList.add("selected");
+    var radio = document.createElement("span");
+    radio.className = "sai-radio";
+    radio.setAttribute("aria-hidden", "true");
+    radio.appendChild(document.createElement("i"));
+    var txt = document.createElement("span");
+    txt.textContent = opt.label;
+    btn.appendChild(radio);
+    btn.appendChild(txt);
+    btn.addEventListener("click", function () { saiSelectAnswer(q.id, opt.value); });
+    wrap.appendChild(btn);
+  });
+}
+
+function saiSelectAnswer(qid, value) {
+  saiState.answers[qid] = value;
+  saiRenderQuestion();
+  saiTrackEvent("quiz_answer", { question: qid, value: value, step: saiState.current + 1 });
+  setTimeout(function () {
+    if (saiState.current < SAI_QUESTIONS.length - 1) saiGoToQuestion(saiState.current + 1);
+    else saiFinishQuiz();
+  }, 220);
+}
+
+function saiPrevQuestion() {
+  if (saiState.current > 0) saiGoToQuestion(saiState.current - 1);
+}
+
+/* ---- FINE DOMANDE → micro-risultato ---- */
+function saiFinishQuiz() {
+  saiShowStep("loading");
+  saiState.result = saiEvaluateLead(saiState.answers);
+  saiTrackEvent("quiz_complete", { tier: saiState.result.tier });
+  setTimeout(function () {
+    if (saiState.result.isOut) {
+      if (SAI_CONFIG.CAPTURE_OUT_LEADS) {
+        var cta = document.getElementById("sai-out-cta");
+        cta.textContent = "Lascia comunque i tuoi recapiti";
+        cta.setAttribute("onclick", "saiGoContact()");
+      }
+      saiShowStep("result-out");
+    } else {
+      saiShowStep("result-in");
+    }
+  }, 1200);
+}
+
+/* ---- RECAPITI: un campo per schermata ---- */
+var SAI_RE_TEL = /^[+]?[0-9][0-9 .-]{6,17}$/;
+var SAI_RE_EMAIL = /^[^ @]+@[^ @]+[.][^ @]{2,}$/;
+
+function saiNormalizePhone(s) {
+  var d = String(s || "").replace(/[^0-9]/g, "");
+  if (d.length > 10 && d.indexOf("0039") === 0) d = d.slice(4);
+  else if (d.length > 10 && d.indexOf("39") === 0) d = d.slice(2);
+  return d;
+}
+function saiValidPhone(s) {
+  if (!SAI_RE_TEL.test(String(s || "").trim())) return false;
+  var d = saiNormalizePhone(s);
+  return d.length >= 8 && d.length <= 13;
+}
+function saiFormatPhone(s) {
+  var d = saiNormalizePhone(s);
+  if (d.length === 10) return d.slice(0, 3) + " " + d.slice(3);
+  return d;
+}
+
+function saiSetErr(inputId, errId, show) {
+  var input = document.getElementById(inputId);
+  var err = document.getElementById(errId);
+  if (input) { input.classList.toggle("is-invalid", !!show); input.setAttribute("aria-invalid", show ? "true" : "false"); }
+  if (err) err.classList.toggle("is-visible", !!show);
+}
+
+/* Un solo form: nome + telefono + email + consensi. Poi la conferma del numero. */
+function saiGoContact() {
+  saiSetProgress(SAI_QUESTIONS.length + 1, "I tuoi recapiti", "2/3 · Recapiti");
+  saiShowStep("contact");
+  var input = document.getElementById("sai-nome");
+  if (input && input.focus && !input.value) input.focus();
+}
+
+function saiGoConfirm() {
+  saiSetProgress(SAI_STEP_TOTAL, "Ultimo passaggio · conferma del numero", "3/3 · Conferma");
+  var c = document.getElementById("sai-tel-confirm");
+  c.value = "";
+  saiSetErr("sai-tel-confirm", "sai-err-tel-confirm", false);
+  saiShowStep("confirm");
+  if (c.focus) c.focus();
+}
+
+function saiValidateField(field) {
+  if (field === "nome") {
+    var ok = document.getElementById("sai-nome").value.trim().length >= 2;
+    saiSetErr("sai-nome", "sai-err-nome", !ok);
+    return ok;
+  }
+  if (field === "tel") {
+    var okT = saiValidPhone(document.getElementById("sai-tel").value);
+    saiSetErr("sai-tel", "sai-err-tel", !okT);
+    return okT;
+  }
+  if (field === "email") {
+    var okE = SAI_RE_EMAIL.test(document.getElementById("sai-email").value.trim());
+    saiSetErr("sai-email", "sai-err-email", !okE);
+    return okE;
+  }
+  if (field === "consensi") {
+    var okC = document.getElementById("sai-consenso-privacy").checked && document.getElementById("sai-consenso-partner").checked;
+    document.getElementById("sai-err-consensi").classList.toggle("is-visible", !okC);
+    return okC;
+  }
+  return false;
+}
+
+document.getElementById("sai-contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  /* valida tutto, poi porta il focus sul primo campo errato */
+  var results = ["nome", "tel", "email", "consensi"].map(function (f) { return { f: f, ok: saiValidateField(f) }; });
+  var firstBad = results.filter(function (r) { return !r.ok; })[0];
+  if (firstBad) {
+    var target = firstBad.f === "consensi" ? document.getElementById("sai-consenso-privacy") : document.getElementById("sai-" + firstBad.f);
+    if (target && target.focus) target.focus();
+    if (target && target.scrollIntoView) target.scrollIntoView({ block: "center" });
+    return;
+  }
+
+  saiState.lead.nome = document.getElementById("sai-nome").value.trim();
+  saiState.lead.telefono = document.getElementById("sai-tel").value.trim();
+  saiState.lead.telefono_norm = saiNormalizePhone(saiState.lead.telefono);
+  saiState.lead.email = document.getElementById("sai-email").value.trim();
+  saiState.lead.consenso_privacy = true;
+  saiState.lead.consenso_partner = true;
+  saiState.lead.consenso_ts = new Date().toISOString();
+  /* IP del consenso: va registrato lato server alla ricezione del payload */
+
+  var first = !saiState.contactComplete;
+  saiState.contactComplete = true;
+  if (first) {
+    saiCaptureLead("contatti_inseriti"); /* lead parziale: telefono NON ancora confermato */
+    saiTrackEvent("quiz_contact_completed", { tier: saiState.result ? saiState.result.tier : "" });
+  }
+  saiGoConfirm();
+});
+
+/* Validazione on blur + feedback immediato mentre corregge */
+["nome", "tel", "email"].forEach(function (f) {
+  var el = document.getElementById("sai-" + f);
+  el.addEventListener("blur", function () { if (el.value.trim() !== "") saiValidateField(f); });
+  el.addEventListener("input", function () { if (el.classList.contains("is-invalid")) saiValidateField(f); });
+});
+["sai-consenso-privacy", "sai-consenso-partner"].forEach(function (id) {
+  document.getElementById(id).addEventListener("change", function () {
+    if (document.getElementById("sai-err-consensi").classList.contains("is-visible")) saiValidateField("consensi");
+  });
+});
+
+/* ---- CONFERMA NUMERO (doppio inserimento) → invio ---- */
+document.getElementById("sai-confirm-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var again = document.getElementById("sai-tel-confirm").value;
+  var match = saiValidPhone(again) && saiNormalizePhone(again) === saiState.lead.telefono_norm;
+  saiSetErr("sai-tel-confirm", "sai-err-tel-confirm", !match);
+  if (!match) { saiTrackEvent("quiz_phone_mismatch", {}); return; }
+
+  var btn = document.getElementById("sai-confirm-btn");
+  btn.disabled = true; btn.classList.add("is-loading"); btn.setAttribute("aria-busy", "true");
+  document.getElementById("sai-confirm-btn-text").textContent = "Invio in corso...";
+
+  saiState.lead.telefono_confermato = true;
+  saiState.submitted = true;
+  saiSubmitFullLead(saiState.result);
+  if (!saiState.result.isOut) saiTrackEvent("Lead", { tier: saiState.result.tier });
+
+  setTimeout(function () {
+    document.getElementById("sai-res-nome").textContent = saiFirstName();
+    document.getElementById("sai-res-tel").textContent = saiFormatPhone(saiState.lead.telefono);
+    document.getElementById("sai-upsell").classList.toggle("is-visible", !!saiState.result.upsellCdq && !saiState.result.isOut);
+    saiShowStep("thanks");
+    btn.disabled = false; btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy");
+    document.getElementById("sai-confirm-btn-text").textContent = "Confermo — chiamatemi a questo numero";
+  }, 900);
+});
+
+function saiFirstName() {
+  return (saiState.lead.nome || "").split(" ")[0];
+}
+
+/* ════════════════════════════════════════════════════════
+   DATA LAYER — collegare SAI_CONFIG.LEAD_ENDPOINT al CRM
+   Il backend: salva il lead (con IP), poi se tier !== OUT e telefono_confermato
+   invia CAPI Meta + TikTok con lo stesso event_id per la deduplica (vedi TRACKING-SETUP.md).
+   ════════════════════════════════════════════════════════ */
+function saiGetUTM() {
+  var p = new URLSearchParams(window.location.search);
+  var keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid", "ttclid"];
+  var out = {};
+  keys.forEach(function (k) { if (p.get(k)) out[k] = p.get(k); });
+  return out;
+}
+
+function saiBasePayload(stage) {
+  var r = saiState.result || {};
+  return {
+    stage: stage,
+    brand: "sportello-agevolazioni-italia",
+    vertical: SAI_CONFIG.VERTICAL,
+    event_id: saiState.eventId,
+    nome: saiState.lead.nome,
+    telefono: saiState.lead.telefono,
+    telefono_confermato: !!saiState.lead.telefono_confermato,
+    email: saiState.lead.email,
+    consenso_privacy: !!saiState.lead.consenso_privacy,
+    consenso_partner: !!saiState.lead.consenso_partner,
+    consenso_ts: saiState.lead.consenso_ts,
+    answers: saiState.answers,
+    tier: r.tier || "",
+    qualifica: r.tier || "",
+    occupazione: r.occupazione || "",
+    lead_value_stimato: SAI_CONFIG.LEAD_VALUE_BY_TIER[r.tier] || null,
+    flags: { premium: !!r.premium, borderline: !!r.borderline, urgent: !!r.urgent, upsellCdq: !!r.upsellCdq, outReasons: r.outReasons || [] },
+    source: saiState.source,
+    utm: saiGetUTM(),
+    page_url: window.location.href,
+    ts: new Date().toISOString()
+  };
+}
+
+function saiPost(payload) {
+  console.log("[SAI] lead payload", payload);
+  if (!SAI_CONFIG.LEAD_ENDPOINT) return;
+  try {
+    fetch(SAI_CONFIG.LEAD_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      keepalive: true
+    }).catch(function () {});
+  } catch (err) { /* nessun blocco del funnel per errori di rete */ }
+}
+
+function saiCaptureLead(stage) { saiPost(saiBasePayload(stage)); }
+function saiSubmitFullLead() { saiPost(saiBasePayload("lead_confermato")); }
+
+function saiTrackEvent(name, params) {
+  params = params || {};
+  window.SAI_EVENTS.push({ name: name, params: params, ts: Date.now() });
+
+  if (name === "Lead") {
+    var leadParams = { content_name: SAI_CONFIG.CONTENT_NAME, vertical: SAI_CONFIG.VERTICAL, qualifica: params.tier || "", telefono_confermato: true };
+    var lv = SAI_CONFIG.LEAD_VALUE_BY_TIER[params.tier];
+    if (lv) { leadParams.lead_value_stimato = lv; leadParams.value = lv; leadParams.currency = "EUR"; }
+    /* Meta: UN SOLO evento lead, con eventID per la dedup con CAPI */
+    if (typeof fbq === "function") fbq("track", "Lead", leadParams, { eventID: saiState.eventId });
+    /* TikTok: CompleteRegistration sul lead idoneo */
+    if (typeof ttq !== "undefined" && ttq && typeof ttq.track === "function") ttq.track("CompleteRegistration", { content_name: SAI_CONFIG.CONTENT_NAME }, { event_id: saiState.eventId });
+  } else {
+    if (typeof fbq === "function") fbq("trackCustom", name, params);
+  }
+  if (typeof gtag === "function") gtag("event", name, params);
+  console.log("[SAI] event", name, params);
+}
+
+/* ════════════════════════════════════════════════════════
+   LANDING — header, mobile CTA, ESC, placeholder da CONFIG
+   ════════════════════════════════════════════════════════ */
+(function saiInit() {
+  Array.prototype.forEach.call(document.querySelectorAll("[data-sai='sla']"), function (el) { el.textContent = SAI_CONFIG.SLA_TEXT; });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-sai='privacy-url']"), function (el) { el.setAttribute("href", SAI_CONFIG.PRIVACY_URL); });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-sai='cookie-url']"), function (el) { el.setAttribute("href", SAI_CONFIG.COOKIE_URL); });
+
+  var header = document.getElementById("sai-header");
+  var mobileCta = document.getElementById("sai-mobile-cta");
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    header.classList.toggle("is-scrolled", y > 60);
+    mobileCta.classList.toggle("is-visible", window.innerWidth < 1024 && y > 400);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  onScroll();
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && saiOverlay.classList.contains("is-open")) saiCloseQuiz();
+  });
+})();
+</script>
+<!-- SAI:EMBED-BODY-END -->
+<div class="sai-preview-pill" aria-hidden="true">Anteprima v2.2 · non in produzione</div>
+</body>
+</html>
