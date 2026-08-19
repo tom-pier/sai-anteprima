@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mappa Funnel Debiti SAI</title>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Brand Sportello Agevolazioni Italia — look unico (documento), colori dichiarati esplicitamente */
+:root{
+  --blu:#0A2A45; --rosso:#AC3625; --verde:#13773B; --crema:#FEFDF9; --carta:#F5F1E8; --ink:#26292E;
+  --linea:rgba(10,42,69,.22); --linea-forte:rgba(10,42,69,.45);
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:Inter,system-ui,Arial,sans-serif;
+}
+html,body{background:var(--crema)}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.page{max-width:960px;margin:0 auto;padding:40px 24px 72px}
+h1,h2,h3{font-family:var(--display);color:var(--blu);margin:0;font-weight:700;text-wrap:balance}
+h1{font-size:clamp(2rem,4.5vw,2.9rem);line-height:1.12}
+h2{font-size:1.75rem;line-height:1.2;margin-bottom:10px}
+h3{font-size:1.2rem;line-height:1.3;margin-bottom:6px}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rosso);margin-bottom:10px}
+.lead{font-size:1.12rem;line-height:1.6;max-width:64ch;color:var(--ink)}
+.muted{opacity:.8}
+section{margin-top:56px}
+.intro{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+/* logo CSS */
+.logo{display:inline-flex;align-items:stretch;gap:9px;line-height:1;text-decoration:none}
+.logo-bars{display:flex;gap:4px}.logo-bars i{display:block;width:6px}.logo-bars .g{background:var(--verde)}.logo-bars .r{background:var(--rosso)}
+.logo-text{display:flex;flex-direction:column;justify-content:center;gap:2px}
+.logo-word{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.05;letter-spacing:.06em;color:var(--blu);text-transform:uppercase}
+.logo-italia{align-self:flex-start;background:var(--rosso);color:#fff;font-family:var(--display);font-weight:700;font-size:11px;line-height:1;letter-spacing:.14em;padding:4px 7px 3px;margin-top:2px}
+header{display:flex;flex-direction:column;gap:22px;padding-bottom:28px;border-bottom:1px solid var(--linea)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:var(--blu);font-weight:500}
+/* numeri chiave */
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+.fact{background:var(--carta);border:1px solid var(--linea);border-radius:6px;padding:18px 18px 16px}
+.fact b{display:block;font-family:var(--display);font-size:2rem;line-height:1;color:var(--blu);font-variant-numeric:tabular-nums;margin-bottom:8px}
+.fact span{font-size:15px;line-height:1.45;display:block}
+/* figura */
+figure{margin:22px 0 0;padding:0}
+figure svg{max-width:100%;height:auto;display:block;color:var(--blu);background:#fff;border:1px solid var(--linea);border-radius:6px}
+figcaption{font-size:14px;line-height:1.5;color:var(--ink);opacity:.85;margin-top:10px;max-width:72ch}
+.scroll{overflow-x:auto}
+/* regole */
+.rules{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
+.rule{border:1px solid var(--linea);border-left:5px solid var(--rosso);border-radius:0 6px 6px 0;padding:18px 20px;background:#fff}
+.rule h3{color:var(--rosso)}
+.rule .answers{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 8px}
+.chip{display:inline-block;border:1px solid var(--linea-forte);border-radius:999px;padding:5px 11px;font-size:14px;font-weight:500;color:var(--blu);background:var(--crema)}
+.chip.red{border-color:var(--rosso);color:var(--rosso)}
+.chip.green{border-color:var(--verde);color:var(--verde)}
+.plus{font-weight:700;color:var(--blu);align-self:center}
+.note{font-size:15px;line-height:1.5;color:var(--ink)}
+.pass{border:1px solid var(--linea);border-left:5px solid var(--verde);border-radius:0 6px 6px 0;padding:18px 20px;background:#fff}
+.pass h3{color:var(--verde)}
+.list{margin:8px 0 0;padding-left:20px;display:grid;gap:6px}
+.list li{padding-left:2px}
+/* tabelle */
+table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45;background:#fff}
+th,td{text-align:left;vertical-align:top;padding:12px 12px;border-bottom:1px solid var(--linea)}
+th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--blu);background:var(--carta);font-weight:600}
+td:first-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.tier td:first-child{font-family:var(--display);font-weight:700;color:var(--blu);font-size:1.05rem}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid var(--linea-forte);color:var(--blu);white-space:nowrap}
+.tag.red{border-color:var(--rosso);color:var(--rosso)}
+.tag.green{border-color:var(--verde);color:var(--verde)}
+.tag.grey{opacity:.7}
+.tablewrap{overflow-x:auto;border:1px solid var(--linea);border-radius:6px;margin-top:16px}
+/* due colonne */
+.two{display:grid;grid-template-columns:1fr;gap:18px;margin-top:16px}
+.card{border:1px solid var(--linea);border-radius:6px;padding:18px 20px;background:#fff}
+.card.soft{background:var(--carta)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:15px;margin-top:10px}
+.kv dt{font-weight:600;color:var(--blu);white-space:nowrap}
+.kv dd{margin:0}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--linea);font-size:13px;color:var(--ink);opacity:.8;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+@media (min-width:760px){
+  .facts{grid-template-columns:repeat(4,1fr)}
+  .rules{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr 1fr}
+  header{flex-direction:row;align-items:flex-end;justify-content:space-between}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="page">
+
+<header>
+  <div>
+    <p class="eyebrow">Verifica dei requisiti · Eliminazione del debito</p>
+    <h1>Come il questionario qualifica una richiesta</h1>
+    <p class="lead" style="margin-top:14px">Mappa del percorso che una persona compie prima di diventare un contatto per il consulente: le domande, le due sole regole che escludono, come vengono classificati quelli che passano e che cosa arriva al partner.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+    <span class="logo" aria-label="Sportello Agevolazioni Italia">
+      <span class="logo-bars"><i class="g"></i><i class="r"></i></span>
+      <span class="logo-text"><span class="logo-word">Sportello</span><span class="logo-word">Agevolazioni</span><span class="logo-italia">ITALIA</span></span>
+    </span>
+    <div class="meta"><span>Funnel v2.2</span><span>17 agosto 2026</span><span>Documento di lavoro</span></div>
+  </div>
+</header>
+
+<div class="facts" aria-label="Numeri chiave">
+  <div class="fact"><b>11</b><span>domande, una per schermata. Circa 4 minuti, nessun documento richiesto.</span></div>
+  <div class="fact"><b>2</b><span>sole regole di esclusione. Tutto il resto passa e diventa dato di qualifica.</span></div>
+  <div class="fact"><b>3</b><span>livelli per chi passa: PREMIUM, IN, BORDERLINE — più i flag urgenza e occupazione.</span></div>
+  <div class="fact"><b>2×</b><span>il numero di telefono va digitato due volte: senza conferma il contatto non parte.</span></div>
+</div>
+
+<!-- ═══════════ 1. PERCORSO ═══════════ -->
+<section>
+  <p class="eyebrow">1 · Il percorso</p>
+  <h2>Prima le domande, poi l'esito, solo alla fine i recapiti</h2>
+  <p class="lead">I recapiti vengono chiesti dopo che la persona ha risposto a tutto e ha letto l'esito. Chi non rientra non lascia nulla. Il contatto diventa un lead solo quando il telefono è stato confermato una seconda volta.</p>
+  <figure class="scroll">
+    <svg viewBox="0 0 1120 430" role="img" aria-label="Percorso del funnel: pagina di ingresso, undici domande, valutazione con due esiti; chi non rientra vede un esito onesto senza lasciare dati; chi rientra lascia i recapiti, conferma il numero e la richiesta arriva al consulente partner" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, Arial, sans-serif">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+        <marker id="arrRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#AC3625"/></marker>
+        <marker id="arrGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#13773B"/></marker>
+      </defs>
+
+      <!-- riga 1 -->
+      <rect x="20" y="60" width="150" height="72" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="95" y="90" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Pagina di ingresso</text>
+      <text x="95" y="110" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">«Verifica i requisiti»</text>
+
+      <line x1="170" y1="96" x2="214" y2="96" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <rect x="216" y="60" width="176" height="72" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="304" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">11 domande</text>
+      <text x="304" y="104" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">una per schermata · ~4 min</text>
+      <text x="304" y="120" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">nessun documento</text>
+
+      <line x1="392" y1="96" x2="428" y2="96" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- rombo valutazione -->
+      <polygon points="490,44 552,96 490,148 428,96" fill="#F5F1E8" stroke="currentColor" stroke-width="1.5"/>
+      <text x="490" y="92" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Valutazione</text>
+      <text x="490" y="108" text-anchor="middle" font-size="11" fill="currentColor" opacity=".8">automatica</text>
+
+      <!-- passa -->
+      <line x1="552" y1="96" x2="598" y2="96" stroke="#13773B" stroke-width="1.8" marker-end="url(#arrGreen)"/>
+      <text x="575" y="84" text-anchor="middle" font-size="11" fill="#13773B" font-weight="600">passa</text>
+
+      <rect x="600" y="60" width="176" height="72" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="688" y="86" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Esito</text>
+      <text x="688" y="104" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">«In base alle tue risposte</text>
+      <text x="688" y="120" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">rientri nei requisiti»</text>
+
+      <line x1="776" y1="96" x2="822" y2="96" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="799" y="84" text-anchor="middle" font-size="11" fill="currentColor" opacity=".85">continua</text>
+
+      <rect x="824" y="60" width="176" height="72" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="912" y="84" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Recapiti</text>
+      <text x="912" y="102" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">nome · telefono · email</text>
+      <text x="912" y="118" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">2 consensi obbligatori</text>
+
+      <!-- gomito da Recapiti a Conferma (riga 2) -->
+      <polyline points="912,132 912,170 1060,170 1060,238" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="986" y="162" text-anchor="middle" font-size="11" fill="currentColor" opacity=".85">lead parziale · telefono non ancora confermato</text>
+
+      <!-- non rientra -->
+      <line x1="490" y1="148" x2="490" y2="238" stroke="#AC3625" stroke-width="1.8" marker-end="url(#arrRed)"/>
+      <text x="500" y="180" font-size="11" fill="#AC3625" font-weight="600">non rientra</text>
+      <text x="500" y="195" font-size="11" fill="#AC3625">(2 sole regole)</text>
+
+      <rect x="400" y="240" width="180" height="84" rx="6" fill="#FEFDF9" stroke="#AC3625" stroke-width="1.5"/>
+      <text x="490" y="264" text-anchor="middle" font-size="14" font-weight="600" fill="#AC3625">Non rientra</text>
+      <text x="490" y="282" text-anchor="middle" font-size="12" fill="currentColor" opacity=".85">esito onesto, senza promesse</text>
+      <text x="490" y="298" text-anchor="middle" font-size="12" fill="currentColor" opacity=".85">indirizzato a CAF / patronato</text>
+      <text x="490" y="314" text-anchor="middle" font-size="12" fill="currentColor" opacity=".85">nessun dato raccolto</text>
+
+      <!-- riga 2: conferma + grazie + partner -->
+      <rect x="970" y="240" width="130" height="84" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="1035" y="266" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Conferma</text>
+      <text x="1035" y="283" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">numero</text>
+      <text x="1035" y="300" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">seconda digitazione</text>
+      <text x="1035" y="317" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">deve coincidere</text>
+
+      <line x1="970" y1="282" x2="900" y2="282" stroke="#13773B" stroke-width="1.8" marker-end="url(#arrGreen)"/>
+      <text x="935" y="270" text-anchor="middle" font-size="11" fill="#13773B" font-weight="600">confermato</text>
+
+      <rect x="700" y="240" width="200" height="84" rx="6" fill="#FEFDF9" stroke="currentColor" stroke-width="1.5"/>
+      <text x="800" y="266" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Grazie</text>
+      <text x="800" y="284" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">«ti chiama un consulente</text>
+      <text x="800" y="300" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">entro {SLA} al numero …»</text>
+      <text x="800" y="316" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">+ upsell dipendenti/pensionati</text>
+
+      <!-- lead completo verso partner -->
+      <line x1="1035" y1="324" x2="1035" y2="372" stroke="#13773B" stroke-width="1.8" marker-end="url(#arrGreen)"/>
+      <text x="1027" y="352" text-anchor="end" font-size="11" fill="#13773B" font-weight="600">lead completo</text>
+
+      <rect x="740" y="374" width="360" height="44" rx="6" fill="#F5F1E8" stroke="#13773B" stroke-width="1.5"/>
+      <text x="920" y="393" text-anchor="middle" font-size="14" font-weight="600" fill="#13773B">Consulente partner</text>
+      <text x="920" y="409" text-anchor="middle" font-size="12" fill="currentColor" opacity=".85">riceve recapiti, 11 risposte, livello di qualifica, consensi, origine</text>
+
+      <!-- nota tempi -->
+      <text x="20" y="392" font-size="12" fill="currentColor" opacity=".75">Il lead «parziale» (recapiti inseriti, telefono non confermato) viene comunque</text>
+      <text x="20" y="408" font-size="12" fill="currentColor" opacity=".75">salvato e marcato come tale: se accettarlo o no è una scelta del partner.</text>
+    </svg>
+    <figcaption>Il percorso completo: la valutazione avviene dopo l'undicesima risposta; solo chi passa vede il modulo recapiti, e solo il numero confermato due volte genera il lead che arriva al consulente.</figcaption>
+  </figure>
+</section>
+
+<!-- ═══════════ 2. CHI NON PASSA ═══════════ -->
+<section>
+  <p class="eyebrow">2 · Logiche di esclusione</p>
+  <h2>Due sole regole. Basta che una sia vera.</h2>
+  <p class="lead">Abbiamo scelto di escludere il meno possibile a monte e di lasciare la selezione fine al consulente, che ha tutte le risposte in mano. Le uniche due situazioni in cui la richiesta si ferma:</p>
+  <div class="rules">
+    <div class="rule">
+      <h3>Regola 1 — Nessuna entrata e disoccupato</h3>
+      <p class="note">Devono valere <b>entrambe</b> le risposte:</p>
+      <div class="answers"><span class="chip red">«Al momento non ho entrate sufficienti»</span><span class="plus">+</span><span class="chip red">«Disoccupato»</span></div>
+      <p class="note">Una sola delle due <b>non basta</b>: un disoccupato con un reddito passa; chi non ha entrate sufficienti ma è pensionato, dipendente o autonomo passa.</p>
+    </div>
+    <div class="rule">
+      <h3>Regola 2 — Nessuna fretta di risolvere</h3>
+      <p class="note">Alla domanda sull'intenzione risponde:</p>
+      <div class="answers"><span class="chip red">«Per ora raccolgo solo informazioni»</span></div>
+      <p class="note">Passano invece «voglio risolvere il prima possibile», «entro 1–2 mesi» e anche «sto valutando, deciderò nei prossimi mesi».</p>
+    </div>
+  </div>
+  <div class="two">
+    <div class="card soft">
+      <h3>Che cosa <u>non</u> esclude</h3>
+      <p class="note">Queste risposte non fermano nessuno: restano dati di qualifica per il consulente.</p>
+      <div class="answers" style="margin-top:10px">
+        <span class="chip">Importo dei debiti (anche sotto 10.000 €)</span><span class="chip">Tipo di creditori</span><span class="chip">Atti già ricevuti o no</span><span class="chip">Tentativi precedenti</span><span class="chip">Documenti non pronti</span><span class="chip">Chi prende la decisione</span><span class="chip">Urgenza percepita</span>
+      </div>
+      <p class="note" style="margin-top:10px">Una soglia minima sull'importo è pronta ma <b>disattivata</b>: si accende solo se il partner la richiede (ad esempio da 10.000 € o da 30.000 €).</p>
+    </div>
+    <div class="card">
+      <h3>Che cosa vede chi non rientra</h3>
+      <ul class="list note">
+        <li>Un esito onesto: «al momento la tua situazione non rientra tra quelle che i consulenti partner possono valutare».</li>
+        <li>Un indirizzo alternativo gratuito: CAF, patronato, associazioni dei consumatori.</li>
+        <li><b>Nessuna richiesta di recapiti</b>, nessun dato salvato, nessun costo per il partner.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 3. CHI PASSA ═══════════ -->
+<section>
+  <p class="eyebrow">3 · Chi passa e come viene classificato</p>
+  <h2>Tre livelli di qualifica, calcolati sulle risposte</h2>
+  <p class="lead">Chi supera le due regole riceve un livello che accompagna il lead: serve al consulente per decidere priorità e approccio della chiamata, e al partner per valutare i lead in modo omogeneo.</p>
+  <div class="tablewrap">
+    <table class="tier">
+      <thead><tr><th>Livello</th><th>Come si ottiene</th><th>Cosa significa per il consulente</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>PREMIUM</td>
+          <td>Tutte insieme: ha già ricevuto cartelle/ingiunzioni/precetti <i>oppure</i> ha pignoramenti, fermi o ipoteche attivi · vuole risolvere il prima possibile · reddito stabile · «tra 30 giorni sarebbe un problema serio» · documenti pronti o in parte · decide da solo o con una persona di fiducia.</td>
+          <td>Priorità massima: situazione concreta, motivazione alta, capacità di sostenere un percorso, può muoversi subito.</td>
+        </tr>
+        <tr>
+          <td>BORDERLINE</td>
+          <td>Passa, ma con almeno un segnale tiepido: può pagare solo a piccole rate · «reggerei ancora un po'» · ha solo una parte dei documenti · decide con una persona di fiducia.</td>
+          <td>Da verificare in chiamata: interesse reale, ma un elemento da chiarire prima di impostare un percorso.</td>
+        </tr>
+        <tr>
+          <td>IN</td>
+          <td>Tutti gli altri che superano le due regole.</td>
+          <td>Lead qualificato standard.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="two">
+    <div class="card">
+      <h3>Flag aggiuntivi sul lead</h3>
+      <dl class="kv">
+        <dt>Urgente</dt><dd>pignoramenti, fermi auto o ipoteche già attivi.</dd>
+        <dt>Occupazione</dt><dd>dipendente · pensionato · autonomo/P.IVA · disoccupato.</dd>
+        <dt>Secondo bisogno</dt><dd>a dipendenti e pensionati viene segnalato che il consulente può verificare anche l'agevolazione creditizia riservata alla loro categoria.</dd>
+        <dt>Motivi di esclusione</dt><dd>se presenti, registrati in chiaro (utile per statistiche e taratura).</dd>
+      </dl>
+    </div>
+    <div class="card soft">
+      <h3>Volume e qualità: la scelta fatta</h3>
+      <p class="note">Con due sole regole il funnel privilegia il <b>volume</b> e sposta la selezione fine in chiamata. Il livello (PREMIUM / IN / BORDERLINE) è lo strumento per trattare i lead in modo diverso — anche a valore diverso, se lo si concorda. Le regole sono parametri: si possono stringere in pochi minuti se la qualità osservata lo richiede.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 4. COSA RICEVE IL PARTNER ═══════════ -->
+<section>
+  <p class="eyebrow">4 · Che cosa arriva al consulente</p>
+  <h2>Ogni lead porta con sé tutta la verifica</h2>
+  <div class="two">
+    <div class="card">
+      <h3>Contenuto del lead</h3>
+      <ul class="list note">
+        <li>Nome e cognome, <b>telefono confermato due volte</b>, email.</li>
+        <li>Le <b>11 risposte complete</b> del questionario.</li>
+        <li>Livello di qualifica (PREMIUM / IN / BORDERLINE) + flag urgenza + occupazione.</li>
+        <li>Consensi con data e ora: trattamento dati e comunicazione ai partner (indirizzo IP registrato alla ricezione).</li>
+        <li>Origine della richiesta (campagna e creatività) e identificativo univoco della richiesta.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Garanzie sul contatto</h3>
+      <ul class="list note">
+        <li>Telefono <b>obbligatorio</b> e ridigitato nell'ultimo passaggio: i due numeri devono coincidere (spazi, trattini e prefisso +39 non contano).</li>
+        <li><b>Doppio consenso obbligatorio</b>: senza il consenso alla comunicazione ai partner la richiesta non parte.</li>
+        <li>Alla persona viene detto chiaramente che la chiamerà «un consulente specializzato nell'eliminazione del debito», quando e a quale numero.</li>
+        <li>Mai promesse di esito: il funnel dice «rientri nei requisiti per una valutazione», non «il debito sarà ridotto».</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 5. LE 11 DOMANDE ═══════════ -->
+<section>
+  <p class="eyebrow">5 · Le domande, in ordine</p>
+  <h2>Che cosa viene chiesto e a che cosa serve</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>#</th><th>Domanda</th><th>Risposte possibili</th><th>Ruolo</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Importo complessivo dei debiti</td><td>meno di 10.000 € · 10–30.000 € · 30–100.000 € · 100–500.000 € · oltre 500.000 €</td><td><span class="tag grey">Qualifica</span></td></tr>
+        <tr><td>2</td><td>Con chi ha i debiti</td><td>Agenzia Entrate-Riscossione / cartelle · banche o finanziarie · più tipi insieme</td><td><span class="tag grey">Qualifica</span></td></tr>
+        <tr><td>3</td><td>Da quanto tempo</td><td>meno di 6 mesi · 6–18 mesi · 18 mesi–3 anni · oltre 3 anni</td><td><span class="tag grey">Qualifica</span></td></tr>
+        <tr><td>4</td><td>A che punto è con i creditori</td><td>solo solleciti · cartelle/ingiunzioni/precetti · pignoramenti, fermi, ipoteche attivi · nessun atto</td><td><span class="tag">Livello + urgenza</span></td></tr>
+        <tr><td>5</td><td>Ha già provato a risolvere</td><td>con un professionista, senza risultato · da solo, senza risultato · prima volta · sta solo confrontando opzioni</td><td><span class="tag grey">Qualifica</span></td></tr>
+        <tr><td>6</td><td>Quanto è concreta l'intenzione</td><td>il prima possibile · entro 1–2 mesi · deciderò nei prossimi mesi · <b>per ora raccolgo solo informazioni</b></td><td><span class="tag red">Esclusione (regola 2)</span> <span class="tag">Livello</span></td></tr>
+        <tr><td>7</td><td>Situazione lavorativa</td><td>dipendente · pensionato · autonomo/P.IVA · <b>disoccupato</b></td><td><span class="tag red">Esclusione (regola 1, con la 8)</span></td></tr>
+        <tr><td>8</td><td>Situazione economica</td><td>reddito stabile · reddito ma solo piccole rate · entrate irregolari · <b>al momento non ho entrate sufficienti</b></td><td><span class="tag red">Esclusione (regola 1, con la 7)</span> <span class="tag">Livello</span></td></tr>
+        <tr><td>9</td><td>Se tra 30 giorni fosse tutto uguale</td><td>problema serio · difficile ma reggerei · non cambierebbe molto · non ci ho pensato</td><td><span class="tag">Livello</span></td></tr>
+        <tr><td>10</td><td>Documenti</td><td>tutto pronto · una parte · nulla · preferisce non condividere per ora</td><td><span class="tag">Livello</span></td></tr>
+        <tr><td>11</td><td>Chi prende la decisione</td><td>da solo · con persona di fiducia ma decide lui · insieme ad altri · non ne ha parlato con nessuno</td><td><span class="tag">Livello</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note muted" style="margin-top:10px">Le domande 1–3 e 5 non incidono né sull'esclusione né sul livello: sono informazioni per la chiamata. Tutte le 11 risposte arrivano comunque al consulente.</p>
+</section>
+
+<!-- ═══════════ 6. DA CONCORDARE ═══════════ -->
+<section>
+  <p class="eyebrow">6 · Parametri da concordare</p>
+  <h2>Le leve che il partner può decidere</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Parametro</th><th>Oggi</th><th>Da decidere</th></tr></thead>
+      <tbody>
+        <tr><td>Tempo di richiamata promesso</td><td>«entro poche ore» (provvisorio)</td><td>il tempo reale che il consulente garantisce: è scritto nell'esito e nella pagina finale.</td></tr>
+        <tr><td>Soglia minima sull'importo</td><td>disattivata</td><td>se attivarla e da quale importo (10.000 € / 30.000 €).</td></tr>
+        <tr><td>Lead con telefono non confermato</td><td>salvati e marcati, non conteggiati come lead</td><td>se il partner li vuole ricevere comunque, e a che condizioni.</td></tr>
+        <tr><td>Valore per livello</td><td>—</td><td>se PREMIUM / IN / BORDERLINE hanno valore diverso.</td></tr>
+        <tr><td>Regole di esclusione</td><td>le due descritte sopra</td><td>restringerle (es. escludere anche «deciderò nei prossimi mesi») se la qualità osservata lo richiede.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <span>Sportello Agevolazioni Italia — servizio privato di informazione e orientamento. Non è collegato né affiliato a enti pubblici.</span>
+  <span>Mappa del funnel · v2.2 · 17 agosto 2026</span>
+</footer>
+
+</div>
+
+</body>
+</html>
